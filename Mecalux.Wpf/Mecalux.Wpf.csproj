@@ -10,11 +10,14 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Domain\Mecalux.Domain.csproj" />
+	  <Compile Remove="Models\**" />
+	  <EmbeddedResource Remove="Models\**" />
+	  <None Remove="Models\**" />
+	  <Page Remove="Models\**" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Models\" />
+	  <ProjectReference Include="..\Domain\Mecalux.Domain.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
